@@ -1,0 +1,2 @@
+add_executable(njr_algebra_matrices_example matrix_example.cpp)
+target_link_libraries(njr_algebra_matrices_example PRIVATE njr::algebra_matrices njr::algebra_finite_fields)

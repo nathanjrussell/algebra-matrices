@@ -1,0 +1,3 @@
+add_executable(njr_algebra_matrices_test matrix_test.cpp)
+target_link_libraries(njr_algebra_matrices_test PRIVATE njr::algebra_matrices njr::algebra_finite_fields GTest::gtest_main)
+gtest_discover_tests(njr_algebra_matrices_test TEST_PREFIX "njr_algebra_matrices.")
