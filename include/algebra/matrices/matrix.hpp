@@ -7,9 +7,9 @@
 #include <stdexcept>
 #include <type_traits>
 #include <utility>
-#include <njr/algebra/core/core.hpp>
+#include <algebra/core/core.hpp>
 
-namespace njr::algebra {
+namespace algebra {
 
 template<RingElement T, std::size_t Rows, std::size_t Columns>
 class MatrixSpace;

@@ -1,9 +1,9 @@
 #include <stdexcept>
 #include <gtest/gtest.h>
-#include <njr/algebra/finite_fields/finite_fields.hpp>
-#include <njr/algebra/matrices/matrices.hpp>
+#include <algebra/finite_fields/finite_fields.hpp>
+#include <algebra/matrices/matrices.hpp>
 
-using namespace njr::algebra;
+using namespace algebra;
 
 using E = PrimeFieldElement<7>;
 using Square = Matrix<E, 2, 2>;

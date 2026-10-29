@@ -1,9 +1,9 @@
 include(FetchContent)
-if(NOT TARGET njr::algebra_finite_fields)
+if(NOT TARGET algebra::finite_fields)
     FetchContent_Declare(
-        njr_algebra_finite_fields
+        algebra_finite_fields
         GIT_REPOSITORY git@github.com:nathanjrussell/algebra-finite-fields.git
-        GIT_TAG c1c229769b6382796fcbe90b23e3001b0e952646
+        GIT_TAG 74b3d569fb48818f4c10f3c32889f2128485f1a7
     )
-    FetchContent_MakeAvailable(njr_algebra_finite_fields)
+    FetchContent_MakeAvailable(algebra_finite_fields)
 endif()
