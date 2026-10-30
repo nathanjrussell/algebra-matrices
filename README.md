@@ -8,7 +8,7 @@ include(FetchContent)
 FetchContent_Declare(
     algebra_matrices
     GIT_REPOSITORY git@github.com:nathanjrussell/algebra-matrices.git
-    GIT_TAG v0.2.0
+    GIT_TAG v0.2.1
 )
 
 FetchContent_MakeAvailable(algebra_matrices)

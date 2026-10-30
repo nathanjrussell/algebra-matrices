@@ -1,12 +1,12 @@
 #pragma once
 
-#include <array>
 #include <cstddef>
 #include <initializer_list>
 #include <limits>
 #include <stdexcept>
 #include <type_traits>
 #include <utility>
+#include <vector>
 #include <algebra/core/core.hpp>
 
 namespace algebra {
@@ -20,12 +20,7 @@ class Matrix : public AdditiveOperators<Matrix<T, Rows, Columns>> {
     static_assert(Rows <= std::numeric_limits<std::size_t>::max() / Columns);
     static constexpr std::size_t extent = Rows * Columns;
 
-    template<std::size_t... I>
-    static std::array<T, extent> zero_array(std::index_sequence<I...>) {
-        return {((void)I, T::zero())...};
-    }
-
-    std::array<T, extent> values_ = zero_array(std::make_index_sequence<extent>{});
+    std::vector<T> values_ = std::vector<T>(extent, T::zero());
 
     static void check_index(std::size_t row, std::size_t column) {
         if (row >= Rows || column >= Columns) {

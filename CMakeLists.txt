@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(algebra_matrices VERSION 0.2.0 LANGUAGES CXX)
+project(algebra_matrices VERSION 0.2.1 LANGUAGES CXX)
 option(ALGEBRA_MATRICES_BUILD_EXAMPLES "Build examples" ${PROJECT_IS_TOP_LEVEL})
 option(ALGEBRA_MATRICES_BUILD_TESTS "Build tests" ${PROJECT_IS_TOP_LEVEL})
 include(cmake/Dependencies.cmake)
